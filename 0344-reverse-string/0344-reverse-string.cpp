@@ -14,19 +14,10 @@ public:
         }
     }*/
 
+
     
     
-    vector<char> reverseString(vector<char>& s){
-        vector<char> res;
-        for(int i=s.size()-1; i!=-1; i--){
-            res.push_back(s[i]);
-        }
-        for(int i=0; i < res.size(); i++){
-            s[i] = res[i];
-        } 
-        return s;
-    }
-    
+    // using swap
     
     /*void reverseString(vector<char>& s){
         char temp;
@@ -39,4 +30,18 @@ public:
             }
         }
     }*/
+    
+    
+        // using new vector
+    
+    vector<char> reverseString(vector<char>& s){
+        vector<char> res;
+        for(int i=s.size()-1; i!=-1; i--){
+            res.push_back(s[i]);
+        }
+        for(int i=0; i < res.size(); i++){
+            s[i] = res[i];
+        } 
+        return s;
+    }
 };
