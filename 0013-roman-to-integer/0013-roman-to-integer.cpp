@@ -1,6 +1,6 @@
 class Solution {
 public:
-   /* int ch(char s){
+    int ch(char s){
         switch(s){
             case 'I':
                 return 1;
@@ -40,8 +40,8 @@ for( i=n; i>=0; i--)
 p = ch(s[i]);
 }
 return ans;
-    }*/
-int value(char ch){
+    }
+/*int value(char ch){
     switch(ch)
     {
         case 'I':
@@ -77,5 +77,5 @@ int romanToInt(string r){
         sum+=v[i];
     }
     return sum;
-}
+}*/
 };
