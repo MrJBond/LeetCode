@@ -18,7 +18,6 @@ class Solution {
     
     // using HashSet
     
-        // using HashMap
         
     public static int[] twoSum(int[] nums, int target) {
         
