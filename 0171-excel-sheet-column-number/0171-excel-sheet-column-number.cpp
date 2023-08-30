@@ -1,6 +1,7 @@
 class Solution {
 public:
-
+    
+    // convert to 26-base system
    int titleToNumber(string columnTitle) {
         int sum = 0;
         if(columnTitle.length() == 1){
