@@ -28,19 +28,22 @@ public:
         }
     }
     int romanToInt(string s) {
-    int i, n, ans=0, p=0;
-    n=s.length()-1;
-for( i=n; i>=0; i--)
-{
- if( ch(s[i]) >= p)
-  ans += ch(s[i]);
- else
-  ans -= ch(s[i]);
+        int i, n, ans=0, p=0;
+        n=s.length()-1;
+        for( i=n; i>=0; i--){
 
-p = ch(s[i]);
-}
-return ans;
+            if( ch(s[i]) >= p)
+                ans += ch(s[i]);
+            else
+                ans -= ch(s[i]);
+
+            p = ch(s[i]);
+        }
+        return ans;
     }
+
+// second solution
+
 /*int value(char ch){
     switch(ch)
     {
