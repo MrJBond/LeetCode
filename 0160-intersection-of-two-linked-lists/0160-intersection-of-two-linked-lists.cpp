@@ -50,13 +50,13 @@ public:
              return NULL;
          }
         
-        // find difference between lengthes
+        // find difference between lengths
          int dif = abs(len(headA) - len(headB)); 
          ListNode* start = NULL;
          ListNode* start2 = NULL;
 
         // adjust the position of "start" pointer 
-        // by skipping nodes which make difference between lengthes
+        // by skipping nodes which make difference between lengths
         if(len(headA) > len(headB)){
             start2 = headB;
             start = headA;
