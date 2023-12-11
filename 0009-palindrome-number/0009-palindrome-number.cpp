@@ -20,11 +20,12 @@ public:
         
         long long int reversed = 0;
         int number = x;
-        
+        int numDidg = findCount(number);
+
         while(number >= 10){
-            int numDidg = findCount(number);
             reversed += (number%10)*pow(10,numDidg-1);
             number = number/10;
+            numDidg--;
         }
         reversed += number;
         
