@@ -1,6 +1,9 @@
 class Solution {
 public:
-    vector<vector<int>> onesMinusZeros(vector<vector<int>>& grid) {
+
+    // First solution
+
+   /* vector<vector<int>> onesMinusZeros(vector<vector<int>>& grid) {
 
         vector<vector<int>> empty;
         if(grid.size() == 0){
@@ -40,5 +43,45 @@ public:
             }
         }
         return result;
-    }
+    }*/
+
+    // Second solution
+        vector<vector<int>> onesMinusZeros(vector<vector<int>>& grid) {
+
+            vector<vector<int>> empty;
+            if(grid.size() == 0){
+                return empty;
+            }
+            vector<vector<int>> result(grid.size(),vector<int>(grid[0].size(),0));
+
+            vector<int> row(grid.size(),0);
+            vector<int> col(grid[0].size(),0);
+
+            // For rows
+            for(int i = 0; i<grid.size(); i++){
+                for(int j = 0; j<grid[0].size(); j++){
+                    if(grid[i][j] == 1){
+                        row[i]++;
+                    }
+                }
+            }
+
+            // For cols
+            for(int i = 0; i<grid[0].size(); i++){
+                for(int j = 0; j<grid.size(); j++){
+                    if(grid[j][i] == 1){
+                        col[i]++;
+                    }
+                }
+            }
+        
+            for(int i = 0; i<result.size(); i++){
+                for(int j = 0; j<result[i].size(); j++){
+                    result[i][j] = col[j] + row[i] - (grid.size() - row[i] + grid[0].size() - col[j]);
+                }
+            }
+            return result;
+
+        }
+
 };
