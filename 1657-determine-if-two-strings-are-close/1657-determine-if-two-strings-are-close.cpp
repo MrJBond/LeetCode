@@ -4,12 +4,16 @@ public:
         if(word1.length() != word2.length()){
             return false;
         }
-        sort(word1.begin(), word1.end());
+
+        // Not necessary
+
+       /* sort(word1.begin(), word1.end());
         sort(word2.begin(), word2.end());
 
         if(word1 == word2){
           return true;
-        }
+        }*/
+        
         vector<int> first(26, 0);
         vector<int> second(26, 0);
 
