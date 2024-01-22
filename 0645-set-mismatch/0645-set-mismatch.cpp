@@ -21,9 +21,13 @@ public:
         int n = nums.size();
 
         // From 1 to n
-        for(int i = 1; i<=n; i++){
+
+        /*for(int i = 1; i<=n; i++){
             countSumEls+=i;
-        }
+        }*/
+
+        // Or with formula
+        countSumEls = (1 + n)*n/2;
 
         // Actual sum
         int countSumNums = 0;
