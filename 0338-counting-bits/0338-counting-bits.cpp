@@ -17,7 +17,7 @@ public:
             if(i % 2 == 0)
                res[i] = res[i/2]; 
              else
-               res[i] = res[i/2]+1 ;
+               res[i] = res[i/2]+1;
         }
         return res;
     }
