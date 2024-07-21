@@ -14,7 +14,7 @@ public:
         if(n == 2){
             return 1;
         }
-        int res = tribonacci(n-1)+tribonacci(n-2)+tribonacci(n-3);
+        int res = tribonacci(n-1) +tribonacci(n-2)+tribonacci(n-3);
         mem[n] = res;
         return res;
     }
