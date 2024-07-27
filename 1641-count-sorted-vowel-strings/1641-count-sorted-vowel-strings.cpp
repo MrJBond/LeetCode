@@ -8,6 +8,6 @@ public:
             e+=i;
             a+=e;
         }
-        return a+e+i+o+u;
+        return a+e+i+o+u ;
     }
 };
