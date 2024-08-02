@@ -6,7 +6,7 @@ public:
             mp[stones[i]]++;
         }
         int r = 0;
-        for(int i = 0; jewels[i] != '\0'; ++i){
+        for(int i = 0 ; jewels[i] != '\0'; ++i){
             r += mp[jewels[i]];
         }
         return r;
