@@ -8,7 +8,7 @@ public:
        int res = 0;
        for(const auto& p : mp){
         if(p.second != 1)
-            res += ((p.second - 1)*p.second)/2; // n!/(2*(n-2)!) => n!/(k!(n-k)!)
+            res += ((p.second - 1)*p.second)/2; //  n!/(2*(n-2)!) => n!/(k!(n-k)!)
        }
        return res;
     }
