@@ -6,6 +6,6 @@ public:
             if(t[i] == s[count])
                 count++;
         }
-        return count == s.length(); 
+        return count == s.length() ; 
     }
 };
