@@ -8,6 +8,6 @@ bool isPalindrome(int x) {
         reverse = reverse * 10 + (x % 10);
         x /= 10;
     }
-    reverse = reverse * 10 + x; // One more number
+    reverse = reverse * 10 + x; //One more number
     return reverse == n; 
 }
