@@ -27,7 +27,7 @@ public:
         if(close == open){
             string add = cur;
             add.push_back('(');
-            solve(add, open-1, close, res);
+            solve(add, open-1, close, res) ;
         }
         else if(close == 0){
             string add = cur;
